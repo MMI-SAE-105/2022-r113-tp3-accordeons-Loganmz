@@ -16,4 +16,9 @@
 -o-transition: all 1s ease-in-out;
 -ms-transition: all 1s ease-in-out;
 transition: all 1s ease-in-out;
+background-color: #EEE;
+list-style-type: none;
+margin: 3px;
+padding: 5px;    
+border-radius: 5px;
 }
