@@ -32,3 +32,10 @@ border-radius: 5px;
     display: flex;
     width: 317px;
 }
+
+#accordeon li figure figcaption {
+    width: 200px;
+    padding: 10px;
+    
+   display: table-cell;
+}
