@@ -10,5 +10,16 @@
   </head>
   <body>
     <h1>Accordéon avec <code>x-collapse</code></h1>
+    <div class="accordeon">
+      <section x-data="{
+        isOpen:true,
+      }">
+      <button @click="isOpen=! isOpen">bouton 1</button>
+      <p x-show="isOpen" x-collapse>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ad
+        similique error odit,
+        voluptas molestias
+        porro beatae exercitationem. Repellendus nihil laborum consequatur expedita harum impedit voluptas quam ipsum
+        sit hic.</p>
+    </section>
   </body>
 </html>
