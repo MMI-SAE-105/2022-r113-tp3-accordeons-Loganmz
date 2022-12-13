@@ -8,24 +8,23 @@
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
-    <div x-data="{ open: false }" class="accordeon" x-transition.scale.origin>
+    <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
+    <div class="accordeon" x-data="{
+      isOpen:1,
+    }">
       <section>
-        <button @click="open = ! open">bouton 1</button>
-        <span x-show="open" x-transition>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, dolores reprehenderit. Officia nobis odio suscipit aut, corrupti fugit sunt ullam quo, expedita dolorem reprehenderit animi aliquid, nam at fuga incidunt?</p>
-        </span>
+        <button @click="isOpen = 1">bouton 1</button>
+        <p  x-show="isOpen === 1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, dolores reprehenderit. Officia nobis odio suscipit aut, corrupti fugit sunt ullam quo, expedita dolorem reprehenderit animi aliquid, nam at fuga incidunt?</p>
       </section>
       <section>
-        <button @click="open = ! open">bouton 2</button>
-        <span x-show="open" x-transition>
-        <p>Necessitatibus nostrum tempora iste quod, maxime quibusdam quae facilis ea sunt provident animi inventore atque ipsam facere a, doloribus sapiente error ullam numquam saepe. Dolorum sunt quod corporis quasi consequatur.</p>
+        <button @click="isOpen = 2">bouton 2</button>
+        <p x-show="isOpen === 2">Necessitatibus nostrum tempora iste quod, maxime quibusdam quae facilis ea sunt provident animi inventore atque ipsam facere a, doloribus sapiente error ullam numquam saepe. Dolorum sunt quod corporis quasi consequatur.</p>
       </section>
       <section>
-        <button @click="open = ! open">bouton 3</button>
-        <span x-show="open" x-transition>
-        <p>Ratione voluptatum reprehenderit quaerat! Expedita impedit ut esse, quas doloremque iure! Veniam nemo sapiente suscipit perspiciatis ipsa quis dolorum molestiae! Molestiae accusantium porro iusto aliquam illum, ipsum sapiente officia voluptas?</p>
+        <button @click="isOpen = 3">bouton 3</button>
+        <p x-show="isOpen === 3">Ratione voluptatum reprehenderit quaerat! Expedita impedit ut esse, quas doloremque iure! Veniam nemo sapiente suscipit perspiciatis ipsa quis dolorum molestiae! Molestiae accusantium porro iusto aliquam illum, ipsum sapiente officia voluptas?</p>
       </section>
     </div>
-    <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
+    
   </body>
 </html>
